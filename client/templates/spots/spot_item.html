@@ -1,0 +1,17 @@
+<template name="spotItem">
+  <div class="spot">
+    <div class="spot-content">
+      <h3>
+        <a href="{{url}}">{{pnumber}}</a>
+        <span>{{status}}</span>
+        <div  class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
+        </div>
+        <!-- <div> -->
+          <h6><p>{{bname}} / {{ownerusername}}</p></h6>
+        <!-- </div> -->
+      </h3>
+      </div>
+      <a href="{{pathFor 'spotPage'}}" class="discuss btn btn-default">Share Spot!</a>
+  </div>
+</template>

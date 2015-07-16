@@ -1,0 +1,47 @@
+
+
+
+<template name="spotSubmit">
+  <form class="main form page">
+    <div class="form-group">
+      <label class="control-label" for="pnumber">Parking Number</label>
+      <div class="controls">
+        <input name = "pnumber" id = "pnumber" type="text" value="" placeholder="Parking Number" class="form-control"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <!-- SELECT OPTION: INPUT OF BUILDING -->
+      <!-- VALIDAR POR QUE NO SALE EL LISTADO -->
+        <select id="buildings">
+          <option value = ""> Select Building</option>
+          {{#each buildings}}
+            <option value = "{{bname}}">{{bname}}</option>
+          {{/each}}
+        </select>
+      <!-- TEXT OPTION: INPUT OF BUILDING -->
+      <!-- <label class for="bname">Building</label>
+      <div class="controls">
+        <input name = "bname" id = "bname" type="text" value="" placeholder="Building" class="form-control"/>
+      </div> -->
+    </div>
+    <div class="form-group">
+      <label class for="ownername">Owner</label>
+      <div class="controls">
+        <input name = "ownername" id = "ownername" type="text" value="" placeholder="Owner Name" class="form-control"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class for="ownerusername">Owner Username</label>
+      <div class="controls">
+        <input name = "ownerusername" id = "ownerusername" type="text" value="" placeholder="Owner Username" class="form-control"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class for="status">Status</label>
+      <div class="controls">
+        <input name = "status" id = "status" type="text" value="" placeholder="Initial Status" class="form-control"/>
+      </div>
+    </div>
+    <input type="submit" value="submit" class="btn btn-primary"/>
+  </form>
+</template>

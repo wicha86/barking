@@ -1,0 +1,12 @@
+<template name="layout">
+  <div class="container">
+    {{> header}}
+    <h1>Welcome to barking!</h1>
+    <h4>The social parking app</h4>
+
+    <div id="main">
+       <!-- {{>buildings}} -->
+       {{> yield}}
+    </div>
+  </div>
+</template>
