@@ -5,7 +5,29 @@ h1 {
 h4 {
   text-align: center;
 }
+.bnamelabel {
+  color: #989898 ;
+  font-size: 10px;
+  font-style: italic;
+}
+.progress-bar-info{
+  color: white ;
+}
 
+.availableTime, .imreserving{
+  color: #A0A0A0 ;
+}
+.align-right{
+  text-align: right;
+}
+
+.illbeback{
+  text-align: right;;
+}
+
+.imreserving{
+  text-align: right;;
+}
 
 .grid-block, .main, .spot, .comments li, .comment-form {
   background: #fff;
@@ -74,7 +96,8 @@ background-position: center;
     margin: 7px 12px 0 0;
     float: left; }
   .spot .spot-content {
-    float: left; }
+    /*float: left;*/
+  }
     .spot .spot-content h3 {
       margin: 0;
       line-height: 1.4;
@@ -89,10 +112,12 @@ background-position: center;
         color: #aaaaaa; }
     .spot .spot-content p {
       margin: 0; }
-  .spot .discuss {
+  .spot .sharebtn, .reservebtn {
     display: block;
-    float: right;
-    margin-top: 7px; }
+    float: left;
+    margin-top: 7px;
+    width: 10%;
+  }
 
 .comments {
   list-style-type: none;

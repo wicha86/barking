@@ -12,27 +12,21 @@ if (Buildings.find().count() === 0 ) {
 
 if (Spots.find().count() === 0 ) {
     Spots.insert({
-      pnumber: 'Parking Spot 001',
-      url: '',
+      pnumber: '001',
       status: 'Ocupied',
       bname: 'cuatro36',
-      ownername: 'User 001',
-      ownerusername: 'Owner Apto 001'
+      timeinit: 80
     });
     Spots.insert({
-      pnumber: 'Parking Spot 002',
-      url: '',
+      pnumber: '002',
       status: 'Ocupied',
       bname: 'cuatro36',
-      ownername: 'User 002',
-      ownerusername: 'Owner Apto 002'
+      timeinit: 51
     });
     Spots.insert({
-      pnumber: 'Parking Spot 003',
-      url: '',
+      pnumber: '003',
       status: 'Ocupied',
       bname: 'cuatro36',
-      ownername: 'User 003',
-      ownerusername: 'Owner Apto 003'
+      timeinit: 92
     });
 }

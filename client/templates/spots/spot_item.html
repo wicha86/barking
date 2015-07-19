@@ -2,16 +2,25 @@
   <div class="spot">
     <div class="spot-content">
       <h3>
-        <a href="{{url}}">{{pnumber}}</a>
+        <a href="{{url}}">{{pnumber}} </a><a class="bnamelabel">/ {{bname}}</a>
         <span>{{status}}</span>
         <div  class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{timeinit}}" aria-valuemin="0" aria-valuemax="500" style="width:{{timeinit}}%;">{{timeinit}} min available</div>
         </div>
-        <!-- <div> -->
-          <h6><p>{{bname}} / {{ownerusername}}</p></h6>
-        <!-- </div> -->
+
       </h3>
-      </div>
-      <a href="{{pathFor 'spotPage'}}" class="discuss btn btn-default">Share Spot!</a>
+      <a href="{{pathFor 'spotPage'}}" class="sharebtn btn btn-default" id = "sharebtn">Share Spot!</a>
+      <a href="{{pathFor 'spotPage'}}" class="reservebtn btn btn-default" id = "reservebtn">Reserve!</a>
+    </div>
+    <div class="illbeback">
+      <label class="availableTime" for="availableTime">I'll be back:</label>
+      <input class="availableTime" id="availableTime" type="datetime-local" name="availableTime" >
+      <button type="submit" class="btn btn-success btn-xs">Submit</button>
+    </div>
+    <div class="imreserving">
+      <label class="imreserving" for="imreserving">I'll Reserve Until:</label>
+      <input class="imreserving" id="imreserving" type="datetime-local" name="imreserving" >
+      <button type="submit" class="btn btn-success btn-xs">Submit</button>
+    </div>
   </div>
 </template>
